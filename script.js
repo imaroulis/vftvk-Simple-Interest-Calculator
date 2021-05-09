@@ -12,6 +12,7 @@ function compute()
     p = document.getElementById("principal").value;
     if (principal <= 0) {
         alert("Enter a positive number");
+        document.getElementById("result").innerHTML = "";
         document.getElementById("principal").focus();
         return;
     }
@@ -23,6 +24,6 @@ function compute()
 function updateRate() 
 {
     var retval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerHTML = retval;
+    document.getElementById("rate_val").innerHTML = retval + "%";
 }
         
